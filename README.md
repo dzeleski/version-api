@@ -1,4 +1,6 @@
-# version-api
+# version_api
 
-This project aims to create an API that allows config management tools
-a way to look up a version for specific metadata (ie hostname, stage, location).
+[![CircleCI](https://circleci.com/gh/dzeleski/version-api/tree/master.svg?style=svg)](https://circleci.com/gh/dzeleski/version-api/tree/master)
+
+This project aims to create an API to manage software versions being deployed by config management tools.
+It will allow deployments to be staged by system metadata (eg stages, location, hostname).
