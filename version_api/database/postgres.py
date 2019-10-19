@@ -7,7 +7,9 @@ from flask import Blueprint
 from sqlobject import connectionForURI, sqlhub, SQLObject, StringCol, ForeignKey, MultipleJoin
 
 if os.environ['FLASK_ENV'] == "development":
-    sql = 'postgres://flask:flask@localhost:5433/version_api'
+    pg_pass = os.environ['pg_pass']
+    sql = f'postgres://zfqvonjx:{pg_pass}@salt.db.elephantsql.com:5432/zfqvonjx'
+    # sql = 'postgres://flask:flask@localhost:5433/version_api'
 else:
     # Prod here
     sql = ''
